@@ -72,8 +72,20 @@
       }
 
       .date-col {
-        width: 120px;
+        width: 140px;
+        flex-shrink: 0;
         color: #666;
+      }
+
+      .contact-col {
+        width: 120px;
+        flex-shrink: 0;
+        color: #666;
+      }
+
+      .content-col {
+        flex: 1;
+        min-width: 0;
       }
 
       section {
@@ -83,6 +95,7 @@
       .flex-row {
         display: flex;
         margin: 16px 0;
+        align-items: flex-start;
       }
 
       a {
@@ -105,7 +118,7 @@
       <div class="main-quote">
         expressing ourselves might be difficult, but we still try... we must.
       </div>
-      <div class="coming-soon">new website soon</div>
+      <!-- <div class="coming-soon">new website soon</div> -->
     </div>
 
     <div class="content">
@@ -131,7 +144,7 @@
 
         <div class="flex-row">
           <div class="date-col">2024</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a href="https://heycurio.com" target="_blank" rel="noopener">
                 Software Engineering and Design Intern at Curio Interactive Inc.
@@ -139,14 +152,14 @@
             </h3>
             <p>Redwood City, CA</p>
             <p>
-              [React Native + F#(??) + C] building amazing experiences for kids!
+              [React Native + F# + C] building amazing experiences for kids!
             </p>
           </div>
         </div>
 
         <div class="flex-row">
           <div class="date-col">2023 — 2024</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">Founding Engineer at ClanTrust</h3>
             <p>Remote, CA, USA</p>
             <p>
@@ -158,7 +171,7 @@
 
         <div class="flex-row">
           <div class="date-col">2022 - 2023</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a
                 href="https://www.trypickle.co/"
@@ -178,7 +191,7 @@
 
         <div class="flex-row">
           <div class="date-col">2022 — 2022</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a href="https://careers.usc.edu/" target="_blank" rel="noopener">
                 Data Intern at University of Southern California
@@ -194,7 +207,7 @@
 
         <div class="flex-row">
           <div class="date-col">2021 — 2021</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a
                 href="https://www.pocketkado.com/"
@@ -228,7 +241,7 @@
 
         <div class="flex-row">
           <div class="date-col">2022</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a
                 href="https://www.youtube.com/watch?v=qeH1OV1VxdQ"
@@ -257,7 +270,7 @@
 
         <div class="flex-row">
           <div class="date-col">2023</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a
                 href="https://github.com/hacksc/hibiscus"
@@ -290,7 +303,7 @@
 
         <div class="flex-row">
           <div class="date-col">2021</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a
                 href="https://github.com/suhitaga/redlino"
@@ -306,7 +319,7 @@
 
         <div class="flex-row">
           <div class="date-col">2020</div>
-          <div>
+          <div class="content-col">
             <h3 class="job-title">
               <a
                 href="https://github.com/dhruvr4/Vocab"
@@ -373,7 +386,7 @@
         </div>
 
         <div class="flex-row">
-          <div class="date-col">LinkedIn</div>
+          <div class="contact-col">LinkedIn</div>
           <div>
             <a
               href="https://linkedin.com/in/suhitaga"
@@ -385,7 +398,7 @@
           </div>
         </div>
         <div class="flex-row">
-          <div class="date-col">GitHub</div>
+          <div class="contact-col">GitHub</div>
           <div>
             <a
               href="https://github.com/suhitaga"
@@ -397,7 +410,7 @@
           </div>
         </div>
         <div class="flex-row">
-          <div class="date-col">Email</div>
+          <div class="contact-col">Email</div>
           <div>
             <a href="mailto:suhit@suhit.me" target="_blank" rel="noopener">
               suhit@suhit.me
@@ -405,7 +418,7 @@
           </div>
         </div>
         <div class="flex-row">
-          <div class="date-col">Twitter</div>
+          <div class="contact-col">Twitter</div>
           <div>
             <a
               href="https://twitter.com/suhitdoingstuff"
@@ -420,10 +433,27 @@
     </div>
 
     <script>
-      // Optional: Add some randomization to the letter positions
-      const letters = document.querySelectorAll(".scattered-header span");
-      letters.forEach((letter) => {
-        letter.style.transform = `rotate(${(Math.random() - 0.5) * 20}deg)`;
+      const scatteredHeaders = document.querySelectorAll(".scattered-header");
+
+      function randomizeLetters(container) {
+        const letters = container.querySelectorAll("span");
+        letters.forEach((letter) => {
+          const randomAngle = (Math.random() - 0.5) * 30;
+          letter.style.transform = `rotate(${randomAngle}deg)`;
+          letter.style.transition = "transform 0.3s ease-out";
+        });
+      }
+
+      scatteredHeaders.forEach((header) => {
+        randomizeLetters(header);
+      });
+
+      scatteredHeaders.forEach((header) => {
+        header.addEventListener("mouseenter", () => randomizeLetters(header));
+        header.addEventListener("mouseleave", () => randomizeLetters(header));
+        header.addEventListener("touchstart", () => randomizeLetters(header));
+        header.addEventListener("touchend", () => randomizeLetters(header));
+        header.addEventListener("touchstart", (e) => e.preventDefault());
       });
     </script>
   </body>
