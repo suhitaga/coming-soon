@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Suhit | suhit.me</title>
+    <link rel="icon" type="image/x-icon" href="suhit.ico" />
     <meta name="description" content="Suhit's personal website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Suhit Agarwal" />
@@ -14,18 +15,23 @@
     <meta name="bingbot" content="index, follow" />
     <meta name="alexa" content="index, follow" />
     <meta name="yandex" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@0..200,0..24&family=Xanh+Mono:ital@0;1&family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .quote-container {
         position: relative;
         text-align: center;
         margin: 80px 0;
-        padding-bottom: 40px;
       }
 
       .main-quote {
         font-style: italic;
         font-size: 18px;
-        color: #666;
+        color: #ebe9e6;
       }
 
       .coming-soon {
@@ -38,24 +44,41 @@
       }
 
       body {
-        font-family: monospace;
+        font-family: "Xanh Mono", monospace;
+        font-size: 18px;
         max-width: 800px;
         margin: 40px auto;
         padding: 20px;
-        background: #fafafa;
-        color: #333;
+        background: #393633;
+        color: #f7f5f2;
         line-height: 1.6;
       }
 
       .scattered-header {
+        font-family: "Nabla", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "EDPT" 100,
+          "EHLT" 12;
+        font-size: 40px;
         height: 120px;
         position: relative;
-        margin: 60px 0;
+        margin: 60px auto;
+        text-align: center;
+      }
+
+      #nameHeader {
+        font-size: 52px;
+        padding-bottom: 80px;
+        font-variation-settings:
+          "EDPT" 160,
+          "EHLT" 12;
       }
 
       .scattered-header span {
         position: absolute;
-        font-size: 20px;
       }
 
       .intro {
@@ -63,7 +86,7 @@
         font-style: italic;
         margin: 40px 0;
         font-size: 18px;
-        color: #666;
+        color: #ebe9e6;
       }
 
       .content {
@@ -74,13 +97,13 @@
       .date-col {
         width: 140px;
         flex-shrink: 0;
-        color: #666;
+        color: #ebe9e6;
       }
 
       .contact-col {
         width: 120px;
         flex-shrink: 0;
-        color: #666;
+        color: #ebe9e6;
       }
 
       .content-col {
@@ -99,7 +122,7 @@
       }
 
       a {
-        color: #333;
+        color: #fad24b;
         text-decoration: none;
       }
 
@@ -110,6 +133,11 @@
       .job-title {
         font-weight: normal;
         margin: 0;
+      }
+
+      ::selection {
+        background: #fad24b;
+        color: #393633;
       }
     </style>
   </head>
@@ -125,10 +153,10 @@
       <section>
         <div class="scattered-header" id="nameHeader">
           <span style="left: 20%; top: 20%">S</span>
-          <span style="left: 40%; top: 40%">u</span>
+          <span style="left: 35%; top: 40%">u</span>
           <span style="left: 50%; top: 30%">h</span>
-          <span style="left: 60%; top: 50%">i</span>
-          <span style="left: 70%; top: 20%">t</span>
+          <span style="left: 65%; top: 50%">i</span>
+          <span style="left: 80%; top: 20%">t</span>
         </div>
         <p>developer + designer</p>
         <p><a href="https://suhit.me">suhit.me</a></p>
@@ -136,10 +164,10 @@
 
       <section>
         <div class="scattered-header">
-          <span style="left: 10%; top: 20%">W</span>
-          <span style="left: 25%; top: 40%">o</span>
-          <span style="left: 35%; top: 20%">r</span>
-          <span style="left: 45%; top: 50%">k</span>
+          <span style="left: 25%; top: 20%">W</span>
+          <span style="left: 40%; top: 40%">o</span>
+          <span style="left: 55%; top: 20%">r</span>
+          <span style="left: 70%; top: 50%">k</span>
         </div>
 
         <div class="flex-row">
@@ -245,14 +273,14 @@
 
       <section>
         <div class="scattered-header">
-          <span style="left: 15%; top: 30%">F</span>
-          <span style="left: 30%; top: 50%">e</span>
-          <span style="left: 45%; top: 20%">a</span>
-          <span style="left: 55%; top: 40%">t</span>
-          <span style="left: 65%; top: 30%">u</span>
-          <span style="left: 75%; top: 50%">r</span>
-          <span style="left: 85%; top: 20%">e</span>
-          <span style="left: 95%; top: 40%">s</span>
+          <span style="left: 10%; top: 30%">F</span>
+          <span style="left: 20%; top: 50%">e</span>
+          <span style="left: 30%; top: 20%">a</span>
+          <span style="left: 40%; top: 40%">t</span>
+          <span style="left: 50%; top: 30%">u</span>
+          <span style="left: 60%; top: 50%">r</span>
+          <span style="left: 70%; top: 20%">e</span>
+          <span style="left: 80%; top: 40%">s</span>
         </div>
 
         <div class="flex-row">
@@ -274,14 +302,14 @@
 
       <section>
         <div class="scattered-header">
-          <span style="left: 20%; top: 30%">P</span>
-          <span style="left: 35%; top: 50%">r</span>
-          <span style="left: 45%; top: 20%">o</span>
-          <span style="left: 55%; top: 40%">j</span>
-          <span style="left: 65%; top: 30%">e</span>
-          <span style="left: 75%; top: 50%">c</span>
-          <span style="left: 85%; top: 20%">t</span>
-          <span style="left: 95%; top: 40%">s</span>
+          <span style="left: 10%; top: 30%">P</span>
+          <span style="left: 20%; top: 50%">r</span>
+          <span style="left: 30%; top: 20%">o</span>
+          <span style="left: 40%; top: 40%">j</span>
+          <span style="left: 50%; top: 30%">e</span>
+          <span style="left: 60%; top: 50%">c</span>
+          <span style="left: 70%; top: 20%">t</span>
+          <span style="left: 80%; top: 40%">s</span>
         </div>
 
         <div class="flex-row">
@@ -306,15 +334,15 @@
 
       <section>
         <div class="scattered-header">
-          <span style="left: 10%; top: 30%">S</span>
-          <span style="left: 20%; top: 50%">i</span>
-          <span style="left: 30%; top: 20%">d</span>
-          <span style="left: 40%; top: 40%">e</span>
-          <span style="left: 60%; top: 30%">P</span>
-          <span style="left: 70%; top: 50%">r</span>
-          <span style="left: 80%; top: 20%">o</span>
-          <span style="left: 90%; top: 40%">j</span>
-          <span style="left: 95%; top: 30%">s</span>
+          <span style="left: 5%; top: 30%">S</span>
+          <span style="left: 15%; top: 50%">i</span>
+          <span style="left: 25%; top: 20%">d</span>
+          <span style="left: 35%; top: 40%">e</span>
+          <span style="left: 50%; top: 30%">P</span>
+          <span style="left: 60%; top: 50%">r</span>
+          <span style="left: 70%; top: 20%">o</span>
+          <span style="left: 80%; top: 40%">j</span>
+          <span style="left: 90%; top: 30%">s</span>
         </div>
 
         <div class="flex-row">
@@ -352,15 +380,15 @@
 
       <section>
         <div class="scattered-header">
-          <span style="left: 20%; top: 30%">E</span>
-          <span style="left: 30%; top: 50%">d</span>
-          <span style="left: 40%; top: 20%">u</span>
-          <span style="left: 50%; top: 40%">c</span>
-          <span style="left: 60%; top: 30%">a</span>
-          <span style="left: 70%; top: 50%">t</span>
-          <span style="left: 80%; top: 20%">i</span>
-          <span style="left: 90%; top: 40%">o</span>
-          <span style="left: 95%; top: 30%">n</span>
+          <span style="left: 5%; top: 30%">E</span>
+          <span style="left: 15%; top: 50%">d</span>
+          <span style="left: 25%; top: 20%">u</span>
+          <span style="left: 35%; top: 40%">c</span>
+          <span style="left: 45%; top: 30%">a</span>
+          <span style="left: 55%; top: 50%">t</span>
+          <span style="left: 65%; top: 20%">i</span>
+          <span style="left: 75%; top: 40%">o</span>
+          <span style="left: 85%; top: 30%">n</span>
         </div>
 
         <div class="flex-row">
@@ -392,13 +420,13 @@
 
       <section>
         <div class="scattered-header">
-          <span style="left: 20%; top: 30%">C</span>
-          <span style="left: 35%; top: 50%">o</span>
-          <span style="left: 45%; top: 20%">n</span>
-          <span style="left: 55%; top: 40%">t</span>
-          <span style="left: 65%; top: 30%">a</span>
-          <span style="left: 75%; top: 50%">c</span>
-          <span style="left: 85%; top: 20%">t</span>
+          <span style="left: 15%; top: 30%">C</span>
+          <span style="left: 26%; top: 50%">o</span>
+          <span style="left: 37%; top: 20%">n</span>
+          <span style="left: 48%; top: 40%">t</span>
+          <span style="left: 59%; top: 30%">a</span>
+          <span style="left: 70%; top: 50%">c</span>
+          <span style="left: 81%; top: 20%">t</span>
         </div>
 
         <div class="flex-row">
@@ -451,6 +479,46 @@
     <script>
       const scatteredHeaders = document.querySelectorAll(".scattered-header");
 
+      // Detect Safari browser
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+      // If Safari, replace Nabla with Bungee Tint
+      if (isSafari) {
+        const safariStyle = document.createElement('style');
+        safariStyle.textContent = `
+          .scattered-header {
+            font-family: "Bungee Shade", sans-serif !important;
+            font-weight: 400;
+            font-size: 36px !important;
+            color: #fad24b !important;
+          }
+          .scattered-header span {
+            color: inherit !important;
+            font-size: inherit !important;
+          }
+          #nameHeader {
+            font-size: 48px !important;
+            background: linear-gradient(45deg, #fad24b, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
+        `;
+        document.head.appendChild(safariStyle);
+      }
+
+      // Rainbow color palette progression
+      const colorPalettes = [
+        null, // default (yellow/orange/red base)
+        "0 #FF6B35, 1 #F7931E, 2 #FFD23F, 3 #FFD23F, 4 #FFAB3E, 5 #FFD6A0, 6 #FF8500, 7 #FFD400, 8 #F9DC5F, 9 #FFFFFF", // warm (orange/yellow)
+        "0 #8B5CF6, 1 #A855F7, 2 #C084FC, 3 #C084FC, 4 #9333EA, 5 #D8B4FE, 6 #7C3AED, 7 #A855F7, 8 #DDD6FE, 9 #FFFFFF", // purple
+        "0 #3B82F6, 1 #60A5FA, 2 #93C5FD, 3 #93C5FD, 4 #2563EB, 5 #BFDBFE, 6 #1D4ED8, 7 #60A5FA, 8 #DBEAFE, 9 #FFFFFF", // blue
+        "0 #10B981, 1 #34D399, 2 #6EE7B7, 3 #6EE7B7, 4 #059669, 5 #A7F3D0, 6 #047857, 7 #34D399, 8 #D1FAE5, 9 #FFFFFF", // green
+        "0 #F59E0B, 1 #FBBF24, 2 #FDE047, 3 #FDE047, 4 #D97706, 5 #FEF3C7, 6 #B45309, 7 #FBBF24, 8 #FFFBEB, 9 #FFFFFF"  // yellow (back to warm)
+      ];
+
+      let currentPaletteIndex = 0;
+      const fallbackColors = ['#fad24b', '#ff6b35', '#C084FC', '#3B82F6', '#10B981', '#F59E0B'];
+
       function randomizeLetters(container) {
         const letters = container.querySelectorAll("span");
         letters.forEach((letter) => {
@@ -460,14 +528,69 @@
         });
       }
 
+      function changeColorPalette(container) {
+        currentPaletteIndex = (currentPaletteIndex + 1) % colorPalettes.length;
+
+        if (isSafari) {
+          // For Safari with Bungee Tint, just change the text color directly
+          const color = fallbackColors[currentPaletteIndex];
+          container.style.setProperty('color', color, 'important');
+          container.style.transition = "color 0.3s ease-out";
+        } else {
+          // For other browsers, use the color palettes
+          const palette = colorPalettes[currentPaletteIndex];
+          if (palette === null) {
+            // Reset to default palette
+            container.style.fontPalette = "normal";
+          } else {
+            container.style.fontPalette = `--nabla-palette-${currentPaletteIndex}`;
+          }
+          container.style.transition = "font-palette 0.3s ease-out";
+        }
+      }
+
+      // Add CSS custom properties for the color palettes
+      const style = document.createElement('style');
+      style.textContent = `
+        @font-palette-values --nabla-palette-1 {
+          font-family: Nabla;
+          override-colors: ${colorPalettes[1]};
+        }
+        @font-palette-values --nabla-palette-2 {
+          font-family: Nabla;
+          override-colors: ${colorPalettes[2]};
+        }
+        @font-palette-values --nabla-palette-3 {
+          font-family: Nabla;
+          override-colors: ${colorPalettes[3]};
+        }
+        @font-palette-values --nabla-palette-4 {
+          font-family: Nabla;
+          override-colors: ${colorPalettes[4]};
+        }
+        @font-palette-values --nabla-palette-5 {
+          font-family: Nabla;
+          override-colors: ${colorPalettes[5]};
+        }
+      `;
+      document.head.appendChild(style);
+
       scatteredHeaders.forEach((header) => {
         randomizeLetters(header);
       });
 
       scatteredHeaders.forEach((header) => {
-        header.addEventListener("mouseenter", () => randomizeLetters(header));
-        header.addEventListener("mouseleave", () => randomizeLetters(header));
-        header.addEventListener("touchstart", () => randomizeLetters(header));
+        header.addEventListener("mouseenter", () => {
+          randomizeLetters(header);
+          changeColorPalette(header);
+        });
+        header.addEventListener("mouseleave", () => {
+          randomizeLetters(header);
+        });
+        header.addEventListener("touchstart", () => {
+          randomizeLetters(header);
+          changeColorPalette(header);
+        });
         header.addEventListener("touchend", () => randomizeLetters(header));
         header.addEventListener("touchstart", (e) => e.preventDefault());
       });
