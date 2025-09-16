@@ -396,11 +396,11 @@
           <div>
             <h3 class="job-title">
               <a href="https://www.usc.edu/" target="_blank" rel="noopener">
-                Bachelor's of Science at University of Southern California
+                University of Southern California
               </a>
             </h3>
             <p>Los Angeles, CA</p>
-            <p>applied and computational math</p>
+            <p>bachelor's in applied and computational math</p>
           </div>
         </div>
 
@@ -480,11 +480,13 @@
       const scatteredHeaders = document.querySelectorAll(".scattered-header");
 
       // Detect Safari browser
-      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      const isSafari = /^((?!chrome|android).)*safari/i.test(
+        navigator.userAgent,
+      );
 
       // If Safari, replace Nabla with Bungee Tint
       if (isSafari) {
-        const safariStyle = document.createElement('style');
+        const safariStyle = document.createElement("style");
         safariStyle.textContent = `
           .scattered-header {
             font-family: "Bungee Shade", sans-serif !important;
@@ -513,11 +515,18 @@
         "0 #8B5CF6, 1 #A855F7, 2 #C084FC, 3 #C084FC, 4 #9333EA, 5 #D8B4FE, 6 #7C3AED, 7 #A855F7, 8 #DDD6FE, 9 #FFFFFF", // purple
         "0 #3B82F6, 1 #60A5FA, 2 #93C5FD, 3 #93C5FD, 4 #2563EB, 5 #BFDBFE, 6 #1D4ED8, 7 #60A5FA, 8 #DBEAFE, 9 #FFFFFF", // blue
         "0 #10B981, 1 #34D399, 2 #6EE7B7, 3 #6EE7B7, 4 #059669, 5 #A7F3D0, 6 #047857, 7 #34D399, 8 #D1FAE5, 9 #FFFFFF", // green
-        "0 #F59E0B, 1 #FBBF24, 2 #FDE047, 3 #FDE047, 4 #D97706, 5 #FEF3C7, 6 #B45309, 7 #FBBF24, 8 #FFFBEB, 9 #FFFFFF"  // yellow (back to warm)
+        "0 #F59E0B, 1 #FBBF24, 2 #FDE047, 3 #FDE047, 4 #D97706, 5 #FEF3C7, 6 #B45309, 7 #FBBF24, 8 #FFFBEB, 9 #FFFFFF", // yellow (back to warm)
       ];
 
       let currentPaletteIndex = 0;
-      const fallbackColors = ['#fad24b', '#ff6b35', '#C084FC', '#3B82F6', '#10B981', '#F59E0B'];
+      const fallbackColors = [
+        "#fad24b",
+        "#ff6b35",
+        "#C084FC",
+        "#3B82F6",
+        "#10B981",
+        "#F59E0B",
+      ];
 
       function randomizeLetters(container) {
         const letters = container.querySelectorAll("span");
@@ -534,7 +543,7 @@
         if (isSafari) {
           // For Safari with Bungee Tint, just change the text color directly
           const color = fallbackColors[currentPaletteIndex];
-          container.style.setProperty('color', color, 'important');
+          container.style.setProperty("color", color, "important");
           container.style.transition = "color 0.3s ease-out";
         } else {
           // For other browsers, use the color palettes
@@ -550,7 +559,7 @@
       }
 
       // Add CSS custom properties for the color palettes
-      const style = document.createElement('style');
+      const style = document.createElement("style");
       style.textContent = `
         @font-palette-values --nabla-palette-1 {
           font-family: Nabla;
